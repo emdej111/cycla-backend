@@ -1,0 +1,23 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pydantic
+pydantic-settings
+python-jose[cryptography]
+passlib[bcrypt]
+anthropic
+pdfplumber
+python-multipart
+alembic
+pytest
+
+# Additional runtime dependencies required by the features above:
+cryptography       # field-level encryption at rest (src/core/encryption.py)
+email-validator     # pydantic EmailStr support
+python-dotenv       # .env loading for pydantic-settings
+bcrypt==4.0.1        # passlib[bcrypt] backend, pinned for compatibility
+
+# Test-only dependencies:
+httpx                # FastAPI TestClient transport
+pytest-asyncio

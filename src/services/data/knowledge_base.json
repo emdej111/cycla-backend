@@ -1,0 +1,114 @@
+{
+  "menstrual": {
+    "summary": {
+      "en": "Your period is here. Estrogen and progesterone are at their lowest — expect lower energy and a need for rest.",
+      "hr": "Menstruacija je tu. Estrogen i progesteron su na najnižoj razini - očekuj manje energije i potrebu za odmorom."
+    },
+    "recommendations": [
+      {
+        "category": "nutrition",
+        "en": "Eat iron-rich foods (leafy greens, legumes, red meat) to replace losses from bleeding.",
+        "hr": "Jedi namirnice bogate željezom (zeleno lisnato povrće, mahunarke, crveno meso) kako bi nadoknadila gubitke uslijed krvarenja."
+      },
+      {
+        "category": "movement",
+        "en": "Favor gentle movement — walking, stretching, restorative yoga.",
+        "hr": "Preferiraj blagu tjelesnu aktivnost - hodanje, istezanje, restorativnu jogu."
+      },
+      {
+        "category": "rest",
+        "en": "Prioritize sleep and rest; this is a natural low-energy phase.",
+        "hr": "Daj prioritet snu i odmoru; ovo je prirodna faza niže energije."
+      },
+      {
+        "category": "self_care",
+        "en": "Heat therapy (heating pad, warm bath) can ease cramps.",
+        "hr": "Toplinska terapija (termofor, topla kupka) može ublažiti grčeve."
+      }
+    ]
+  },
+  "follicular": {
+    "summary": {
+      "en": "Estrogen is rising. Energy, mood, and cognitive sharpness typically increase through this phase.",
+      "hr": "Estrogen raste. Energija, raspoloženje i kognitivna oštrina obično rastu tijekom ove faze."
+    },
+    "recommendations": [
+      {
+        "category": "movement",
+        "en": "High-intensity training is well tolerated — this is a good window for harder workouts.",
+        "hr": "Visoko-intenzivni trening se dobro podnosi - ovo je dobar period za zahtjevnije treninge."
+      },
+      {
+        "category": "productivity",
+        "en": "Good time for creative work, brainstorming, and starting new projects.",
+        "hr": "Dobro vrijeme za kreativan rad, brainstorming i pokretanje novih projekata."
+      },
+      {
+        "category": "social",
+        "en": "Social energy tends to be higher — plan social activities now.",
+        "hr": "Društvena energija je obično viša - sada je dobro vrijeme za druženja."
+      },
+      {
+        "category": "nutrition",
+        "en": "Support rising estrogen with fiber-rich vegetables and fermented foods.",
+        "hr": "Podrži rastući estrogen povrćem bogatim vlaknima i fermentiranom hranom."
+      }
+    ]
+  },
+  "ovulatory": {
+    "summary": {
+      "en": "Estrogen and LH peak around ovulation. This is usually the highest-energy window of the cycle.",
+      "hr": "Estrogen i LH hormon dosežu vrhunac oko ovulacije. Ovo je obično razdoblje najveće energije u ciklusu."
+    },
+    "recommendations": [
+      {
+        "category": "movement",
+        "en": "Peak energy and strength — a great time for strength training and PRs.",
+        "hr": "Vrhunac energije i snage - odlično vrijeme za trening snage i osobne rekorde."
+      },
+      {
+        "category": "productivity",
+        "en": "Communication and confidence peak — good timing for important meetings or decisions.",
+        "hr": "Komunikacija i samopouzdanje su na vrhuncu - dobro vrijeme za važne sastanke ili odluke."
+      },
+      {
+        "category": "fertility",
+        "en": "Fertility is at its highest in this window if pregnancy is a goal or to avoid.",
+        "hr": "Plodnost je u ovom razdoblju najveća, bilo da je trudnoća cilj ili nešto što se izbjegava."
+      },
+      {
+        "category": "nutrition",
+        "en": "Stay well hydrated and support the body with antioxidant-rich foods (berries, colorful vegetables).",
+        "hr": "Ostani dobro hidrirana i podrži tijelo hranom bogatom antioksidansima (bobičasto voće, šareno povrće)."
+      }
+    ]
+  },
+  "luteal": {
+    "summary": {
+      "en": "Progesterone rises then falls. PMS-type symptoms (mood changes, bloating, fatigue) are common, especially in the late luteal phase.",
+      "hr": "Progesteron raste pa pada. Simptomi slični PMS-u (promjene raspoloženja, nadutost, umor) su česti, posebno u kasnoj lutealnoj fazi."
+    },
+    "recommendations": [
+      {
+        "category": "nutrition",
+        "en": "Reduce caffeine intake — it can worsen anxiety and breast tenderness in this phase.",
+        "hr": "Smanji unos kofeina - može pogoršati anksioznost i osjetljivost grudi u ovoj fazi."
+      },
+      {
+        "category": "supplements",
+        "en": "Magnesium and calcium may help ease cramps, mood swings, and bloating.",
+        "hr": "Magnezij i kalcij mogu pomoći u ublažavanju grčeva, promjena raspoloženja i nadutosti."
+      },
+      {
+        "category": "movement",
+        "en": "Favor moderate exercise (walking, pilates, swimming) over high-intensity training as progesterone drops.",
+        "hr": "Preferiraj umjerenu tjelesnu aktivnost (hodanje, pilates, plivanje) umjesto visoko-intenzivnog treninga dok progesteron pada."
+      },
+      {
+        "category": "rest",
+        "en": "You may need more sleep — go to bed earlier if you're feeling fatigued.",
+        "hr": "Možda ćeš trebati više sna - lezi ranije ako se osjećaš umorno."
+      }
+    ]
+  }
+}
