@@ -7,6 +7,13 @@ from src.models.chat import ChatRole
 
 class ChatMessageCreate(BaseModel):
     message: str
+    persist: bool = True
+    """Whether to save this exchange to the user's chat history.
+
+    Set to False for one-off/internal prompts (e.g. generating a
+    personalized home-screen insight) that shouldn't appear in the
+    user-facing Coach conversation history.
+    """
 
 
 class ChatMessageRead(BaseModel):

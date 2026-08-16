@@ -45,14 +45,16 @@ def send_message(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> ChatResponse:
-    history_stmt = (
-        select(ChatMessage)
-        .where(ChatMessage.user_id == current_user.id)
-        .order_by(ChatMessage.created_at.desc())
-        .limit(_MAX_HISTORY_MESSAGES)
-    )
-    recent = list(reversed(db.execute(history_stmt).scalars().all()))
-    conversation_history = [{"role": m.role.value, "content": m.content} for m in recent]
+    conversation_history: list[dict] = []
+    if payload.persist:
+        history_stmt = (
+            select(ChatMessage)
+            .where(ChatMessage.user_id == current_user.id)
+            .order_by(ChatMessage.created_at.desc())
+            .limit(_MAX_HISTORY_MESSAGES)
+        )
+        recent = list(reversed(db.execute(history_stmt).scalars().all()))
+        conversation_history = [{"role": m.role.value, "content": m.content} for m in recent]
 
     context = _build_context(db, current_user)
 
@@ -64,11 +66,12 @@ def send_message(
             "Please try again in a moment."
         )
 
-    user_message = ChatMessage(user_id=current_user.id, role=ChatRole.USER, content=payload.message)
-    assistant_message = ChatMessage(user_id=current_user.id, role=ChatRole.ASSISTANT, content=reply)
-    db.add(user_message)
-    db.add(assistant_message)
-    db.commit()
+    if payload.persist:
+        user_message = ChatMessage(user_id=current_user.id, role=ChatRole.USER, content=payload.message)
+        assistant_message = ChatMessage(user_id=current_user.id, role=ChatRole.ASSISTANT, content=reply)
+        db.add(user_message)
+        db.add(assistant_message)
+        db.commit()
 
     return ChatResponse(reply=reply, disclaimer=MEDICAL_DISCLAIMER)
 

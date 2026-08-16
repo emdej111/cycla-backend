@@ -4,7 +4,7 @@ from datetime import date, timedelta
 
 os.environ.setdefault("DATABASE_URL", "sqlite:///./test.db")
 os.environ.setdefault("SECRET_KEY", "test-secret-key")
-os.environ.setdefault("ENCRYPTION_KEY", "z3nJZ7q1s0m3sM6f6f6QeXGz3nJZ7q1s0m3sM6f6f4=")
+os.environ.setdefault("ENCRYPTION_KEY", "lhJk11-P6ncmWn4zewHdMMNuMWGfII-ikSDi3pinSWY=")
 os.environ.setdefault("ANTHROPIC_API_KEY", "test-key")
 os.environ.setdefault("ENVIRONMENT", "test")
 
